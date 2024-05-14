@@ -111,6 +111,9 @@ class video_Segmentation:
             name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
 
             audio_output = f'{audio_output}/{name}.wav'
+            start_time = start_time.split(',')[0]
+            end_time = end_time.split(',')[0]
+
             self.ffmpeg_extract_audio(self.video_pth,audio_output,start_time,end_time)
 
     def srt_format_timestamp(self, seconds):
