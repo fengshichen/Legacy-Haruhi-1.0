@@ -7,7 +7,7 @@ import sys
 sys.path.append('..')
 from src_reform import utils, checkCharacter
 import os
-import openai
+#import openai
 
 
 # TODO
